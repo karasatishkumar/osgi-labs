@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<blueprint xmlns="http://www.osgi.org/xmlns/blueprint/v1.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.osgi.org/xmlns/blueprint/v1.0.0
+           http://www.osgi.org/xmlns/blueprint/v1.0.0/blueprint.xsd">
+
+	<bean id="consumer" class="org.techiekernel.osgi.consumer.Consumer"
+		init-method="init">
+		<property name="activatorProducer" ref="activatorProducer" />
+		<property name="blueprintProducer" ref="blueprintProducer" />
+	</bean>
+
+	<reference id="activatorProducer"
+		interface="org.techiekernel.osgi.activator.producer.Producer" />
+	<reference id="blueprintProducer"
+		interface="org.techiekernel.osgi.blueprint.producer.Producer" />	
+
+</blueprint>

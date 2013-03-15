@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  
+  <parent>
+    <artifactId>org.techiekernel.osgi.starter</artifactId>
+    <groupId>org.techiekernel.osgi</groupId>
+    <version>1.0</version>
+    <relativePath>../</relativePath>
+  </parent>
+  
+  <groupId>org.techiekernel.osgi</groupId>
+  <artifactId>org.techiekernel.osgi.blueprint.producer</artifactId>
+  <version>1.0</version>
+  <name>org.techiekernel.osgi.blueprint.producer</name>
+  <url>http://maven.apache.org</url>
+  <packaging>bundle</packaging>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.osgi</groupId>
+			<artifactId>org.osgi.core</artifactId>
+			<version>${osgi.core.version}</version>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.felix</groupId>
+				<artifactId>maven-bundle-plugin</artifactId>
+				<extensions>true</extensions>
+				<configuration>
+					<instructions>
+						<Export-Package>org.techiekernel.osgi.blueprint.producer</Export-Package>
+						<Private-Package>org.techiekernel.osgi.blueprint.producer.impl</Private-Package>
+					</instructions>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+</project>
