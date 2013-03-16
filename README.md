@@ -17,14 +17,17 @@ You need the following packages to be installed:
 After completing the prerequisites, you can follow the instructions to build the project.
 
 ### check out sources
-`git clone https://github.com/karasatishkumar/osgi-labs.git
+
+	git clone https://github.com/karasatishkumar/osgi-labs.git
 
 ### compile and test, build all jars
-`mvn clean install
+
+	mvn clean install
+
 Once you have successfully installed the project, you need some apache karaf knowledge to install the bundles to OSGi container (Apache Karaf).
 
 ## Contributing
-[Pull requests][] are welcome.
+Pull requests are welcome.
 
 ## Staying in touch
 
