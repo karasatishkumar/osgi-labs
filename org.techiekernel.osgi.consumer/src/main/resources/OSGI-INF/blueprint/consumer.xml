@@ -8,11 +8,15 @@
 		init-method="init">
 		<property name="activatorProducer" ref="activatorProducer" />
 		<property name="blueprintProducer" ref="blueprintProducer" />
+		<property name="carProducers" ref="carProducers" />
 	</bean>
 
 	<reference id="activatorProducer"
 		interface="org.techiekernel.osgi.activator.producer.Producer" />
 	<reference id="blueprintProducer"
 		interface="org.techiekernel.osgi.blueprint.producer.Producer" />	
+		
+	<reference-list id="carProducers"
+		interface="org.techiekernel.osgi.blueprint.car.ProduceCar" />		
 
 </blueprint>

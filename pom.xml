@@ -36,7 +36,8 @@
 		<module>org.techiekernel.osgi.activator.producer</module>
 		<module>org.techiekernel.osgi.blueprint.producer</module>
 		<module>org.techiekernel.osgi.consumer</module>
-		<!-- <module>org.techiekernel.osgi.blueprint.bmw</module>
-		<module>org.techiekernel.osgi.blueprint.ducati</module> -->
+		<module>org.techiekernel.osgi.blueprint.car</module>
+		<module>org.techiekernel.osgi.blueprint.bmw</module>
+		<module>org.techiekernel.osgi.blueprint.ducati</module>
 	</modules>
 </project>

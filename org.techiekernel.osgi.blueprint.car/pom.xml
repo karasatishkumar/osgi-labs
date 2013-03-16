@@ -12,24 +12,11 @@
 	</parent>
 
 	<groupId>org.techiekernel.osgi</groupId>
-	<artifactId>org.techiekernel.osgi.blueprint.ducati</artifactId>
+	<artifactId>org.techiekernel.osgi.blueprint.car</artifactId>
 	<version>1.0</version>
-	<name>org.techiekernel.osgi.blueprint.ducati</name>
+	<name>org.techiekernel.osgi.blueprint.car</name>
 	<url>http://maven.apache.org</url>
 	<packaging>bundle</packaging>
-
-	<dependencies>
-		<dependency>
-			<groupId>org.osgi</groupId>
-			<artifactId>org.osgi.core</artifactId>
-			<version>${osgi.core.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.techiekernel.osgi</groupId>
-			<artifactId>org.techiekernel.osgi.blueprint.car</artifactId>
-			<version>${project.version}</version>
-		</dependency>
-	</dependencies>
 
 	<build>
 		<plugins>
@@ -39,11 +26,11 @@
 				<extensions>true</extensions>
 				<configuration>
 					<instructions>
-						<!-- <Export-Package>org.techiekernel.osgi.blueprint.car</Export-Package> -->
-						<Private-Package>org.techiekernel.osgi.blueprint.ducati</Private-Package>
+						<Export-Package>org.techiekernel.osgi.blueprint.car</Export-Package>
 					</instructions>
 				</configuration>
 			</plugin>
 		</plugins>
 	</build>
 </project>
+	

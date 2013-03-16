@@ -28,6 +28,16 @@
 			<artifactId>org.techiekernel.osgi.blueprint.producer</artifactId>
 			<version>${project.version}</version>
 		</dependency>
+		<dependency>
+			<groupId>org.techiekernel.osgi</groupId>
+			<artifactId>org.techiekernel.osgi.blueprint.car</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.techiekernel.osgi</groupId>
+			<artifactId>org.techiekernel.osgi.blueprint.car</artifactId>
+			<version>${project.version}</version>
+		</dependency>
 	</dependencies>
 
 	<build>
