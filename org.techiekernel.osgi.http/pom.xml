@@ -3,6 +3,7 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
 	xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<modelVersion>4.0.0</modelVersion>
+
 	<parent>
 		<artifactId>org.techiekernel.osgi.starter</artifactId>
 		<groupId>org.techiekernel.osgi</groupId>
@@ -11,22 +12,35 @@
 	</parent>
 
 	<groupId>org.techiekernel.osgi</groupId>
-	<artifactId>org.techiekernel.osgi.consumer</artifactId>
+	<artifactId>org.techiekernel.osgi.http</artifactId>
 	<version>1.0</version>
-	<name>org.techiekernel.osgi.consumer</name>
+	<name>org.techiekernel.osgi.http</name>
 	<url>http://maven.apache.org</url>
 	<packaging>bundle</packaging>
 
 	<dependencies>
 		<dependency>
-			<groupId>org.techiekernel.osgi</groupId>
-			<artifactId>org.techiekernel.osgi.activator.producer</artifactId>
-			<version>${project.version}</version>
+			<groupId>org.osgi</groupId>
+			<artifactId>org.osgi.core</artifactId>
+			<version>${osgi.core.version}</version>
 		</dependency>
 		<dependency>
-			<groupId>org.techiekernel.osgi</groupId>
-			<artifactId>org.techiekernel.osgi.blueprint.producer</artifactId>
-			<version>${project.version}</version>
+			<groupId>org.apache.felix</groupId>
+			<artifactId>org.apache.felix.framework</artifactId>
+			<version>3.0.1</version>
+			<type>bundle</type>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.felix</groupId>
+			<artifactId>org.apache.felix.http.bridge</artifactId>
+			<version>2.0.4</version>
+			<type>bundle</type>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.felix</groupId>
+			<artifactId>javax.servlet</artifactId>
+			<version>1.0.0</version>
+			<type>bundle</type>
 		</dependency>
 		<dependency>
 			<groupId>org.techiekernel.osgi</groupId>
@@ -43,7 +57,8 @@
 				<extensions>true</extensions>
 				<configuration>
 					<instructions>
-						<Export-Package>org.techiekernel.osgi.consumer</Export-Package>
+						<Export-Package>org.techiekernel.osgi.http.servlet</Export-Package>
+						<!-- <Private-Package>org.techiekernel.osgi.blueprint.producer.impl</Private-Package> -->
 					</instructions>
 				</configuration>
 			</plugin>
