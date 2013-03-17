@@ -17,5 +17,15 @@
 			<entry key="url-patterns" value="/producer" />
 		</service-properties>
 	</service>
+	
+	
+	<!-- <bean id="producerfilter" class="org.techiekernel.osgi.http.filter.ProducerFilter">
+	</bean>
+	
+	<service ref="producerFilter" interface="javax.servlet.Filter">
+		<service-properties>
+			<entry key="pattern" value="/producer" />
+		</service-properties>
+	</service> -->
 
 </blueprint>

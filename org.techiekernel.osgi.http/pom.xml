@@ -26,21 +26,33 @@
 		</dependency>
 		<dependency>
 			<groupId>org.apache.felix</groupId>
-			<artifactId>org.apache.felix.framework</artifactId>
-			<version>3.0.1</version>
-			<type>bundle</type>
+			<artifactId>org.apache.felix.http.api</artifactId>
+			<version>2.0.4</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.felix</groupId>
+			<artifactId>org.apache.felix.http.base</artifactId>
+			<version>2.0.4</version>
 		</dependency>
 		<dependency>
 			<groupId>org.apache.felix</groupId>
 			<artifactId>org.apache.felix.http.bridge</artifactId>
 			<version>2.0.4</version>
-			<type>bundle</type>
 		</dependency>
 		<dependency>
 			<groupId>org.apache.felix</groupId>
-			<artifactId>javax.servlet</artifactId>
-			<version>1.0.0</version>
-			<type>bundle</type>
+			<artifactId>org.apache.felix.http.bundle</artifactId>
+			<version>2.0.4</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.felix</groupId>
+			<artifactId>org.apache.felix.http.proxy</artifactId>
+			<version>2.0.4</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.felix</groupId>
+			<artifactId>org.apache.felix.http.whiteboard</artifactId>
+			<version>2.0.4</version>
 		</dependency>
 		<dependency>
 			<groupId>org.techiekernel.osgi</groupId>
@@ -57,7 +69,7 @@
 				<extensions>true</extensions>
 				<configuration>
 					<instructions>
-						<Export-Package>org.techiekernel.osgi.http.servlet</Export-Package>
+						<Export-Package>org.techiekernel.osgi.http.servlet,org.techiekernel.osgi.http.filter</Export-Package>
 						<!-- <Private-Package>org.techiekernel.osgi.blueprint.producer.impl</Private-Package> -->
 					</instructions>
 				</configuration>
