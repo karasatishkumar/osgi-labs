@@ -5,6 +5,7 @@ we will be contributing those. As of now we have contributed the following areas
 * OSGi service registration with bundle activator
 * OSGi service registration with blueprint context
 * Reference list example for multiple services
+* OSGi web application  with servlet using blueprint
 
 ## Prerequisites
 You need the following packages to be installed:
