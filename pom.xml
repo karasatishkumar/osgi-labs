@@ -39,5 +39,6 @@
 		<module>org.techiekernel.osgi.blueprint.bmw</module>
 		<module>org.techiekernel.osgi.blueprint.ducati</module>
     <module>org.techiekernel.osgi.http</module>
+    <module>org.techiekernel.osgi.cxf</module>
   </modules>
 </project>
