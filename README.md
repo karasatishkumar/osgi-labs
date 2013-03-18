@@ -6,11 +6,14 @@ we will be contributing those. As of now we have contributed the following areas
 * OSGi service registration with blueprint context
 * Reference list example for multiple services
 * OSGi web application  with servlet and filter using blueprint
+* OSGi Bundle - Apache CXF JAX-RS example
+	karaf@root> features:addurl mvn:org.apache.cxf.karaf/apache-cxf/2.4.2/xml/features
+	karaf@root> features:install cxf
 
 ## Prerequisites
 You need the following packages to be installed:
 * Java 7
-* Apache Karaf 3.0
+* Apache Karaf 2.3.1
 * Maven 3.0.5
 * Git
 
