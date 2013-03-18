@@ -19,13 +19,14 @@
 	</service>
 	
 	
-	<!-- <bean id="producerfilter" class="org.techiekernel.osgi.http.filter.ProducerFilter">
+	<bean id="producerfilter" class="org.techiekernel.osgi.http.filter.ProducerFilter">
 	</bean>
 	
-	<service ref="producerFilter" interface="javax.servlet.Filter">
+	<service ref="producerfilter" interface="javax.servlet.Filter">
 		<service-properties>
-			<entry key="pattern" value="/producer" />
+			<entry key="urlPatterns" value="/*" />
+			<entry key="order" value="0" />
 		</service-properties>
-	</service> -->
+	</service>
 
 </blueprint>
