@@ -7,6 +7,8 @@ we will be contributing those. As of now we have contributed the following areas
 * Reference list example for multiple services
 * OSGi web application  with servlet and filter using blueprint
 * OSGi Bundle - Apache CXF JAX-RS example
+
+#### Prerequisites for Apache CXF bundle dependency
 	karaf@root> features:addurl mvn:org.apache.cxf.karaf/apache-cxf/2.4.2/xml/features
 	karaf@root> features:install cxf
 
