@@ -1,4 +1,4 @@
-# OSGi Labs
+## OSGi Labs
 This project is just to give a tour in to OSGi usage. We have used Apache Karaf
 as the OSGi container and Apache Aries as blueprint. As we explore more in OSGi,
 we will be contributing those. As of now we have contributed the following areas:
