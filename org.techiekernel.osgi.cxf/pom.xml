@@ -26,10 +26,20 @@
 			<version>${osgi.core.version}</version>
 		</dependency>
 		<dependency>
-			<groupId>org.apache.cxf</groupId>
-			<artifactId>cxf-bundle-jaxrs</artifactId>
-			<version>2.1.2</version>
-		</dependency>
+            <groupId>org.apache.cxf</groupId>
+            <artifactId>cxf-rt-core</artifactId>
+            <version>2.6.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.cxf</groupId>
+            <artifactId>cxf-rt-frontend-jaxrs</artifactId>
+            <version>2.6.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.cxf</groupId>
+            <artifactId>cxf-bundle</artifactId>
+            <version>2.6.1</version>
+        </dependency>
 	</dependencies>
 
 	<build>
@@ -41,7 +51,7 @@
 				<configuration>
 					<instructions>
 						<Export-Package>org.techiekernel.osgi.cxf</Export-Package>
-						<Private-Package>org.techiekernel.osgi.cxf.impl</Private-Package>
+						<Import-Package>org.apache.karaf.features*;version="[2,4)",*</Import-Package>
 					</instructions>
 				</configuration>
 			</plugin>

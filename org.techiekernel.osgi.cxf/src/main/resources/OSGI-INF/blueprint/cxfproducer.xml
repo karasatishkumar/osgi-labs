@@ -7,18 +7,17 @@
              http://cxf.apache.org/blueprint/core http://cxf.apache.org/schemas/blueprint/core.xsd
              ">
 
-	<cxf:bus>
+<!-- 	<cxf:bus>
 		<cxf:features>
 			<cxf:logging />
 		</cxf:features>
-	</cxf:bus>
+	</cxf:bus> -->
 
-	<jaxrs:server address="/rest/producer">
+	<jaxrs:server id="karafproducerservice" address="/rest">
 		<jaxrs:serviceBeans>
-			<ref component-id="producerservicereference" />
+			<ref component-id="producerservice" />
 		</jaxrs:serviceBeans>
 	</jaxrs:server>
 
-	<bean id="producerservice" class="org.techiekernel.osgi.cxf.impl.ProducerServiceImpl" />
-	<reference id="producerservicereference" interface="org.techiekernel.osgi.cxf.ProducerService"/>
+	<bean id="producerservice" class="org.techiekernel.osgi.cxf.ProducerService" />
 </blueprint>
