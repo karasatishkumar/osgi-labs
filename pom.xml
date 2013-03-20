@@ -40,5 +40,6 @@
 		<module>org.techiekernel.osgi.blueprint.ducati</module>
     <module>org.techiekernel.osgi.http</module>
     <module>org.techiekernel.osgi.cxf</module>
+    <module>org.techiekernel.osgi.ui</module>
   </modules>
 </project>
