@@ -12,6 +12,7 @@
 
 	<properties>
 		<osgi.core.version>4.2.0</osgi.core.version>
+		<cxf.version>2.6.2</cxf.version>
 	</properties>
 
 	<build>

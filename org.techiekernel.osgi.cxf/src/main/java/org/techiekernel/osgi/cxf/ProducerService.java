@@ -9,6 +9,10 @@ import javax.ws.rs.core.Response;
 
 @Path("/producer")
 public class ProducerService{
+	
+	public void init() {
+		System.out.println("calling init in the rest class");
+	}
 
 	@GET
 	@Path("/{param}")
