@@ -9,8 +9,11 @@ we will be contributing those. As of now we have contributed the following areas
 * OSGi Bundle - Apache CXF JAX-RS example
 
 #### Prerequisites for Apache CXF bundle dependency
-	karaf@root> features:addurl mvn:org.apache.cxf.karaf/apache-cxf/2.5.0/xml/features
-	karaf@root> features:install cxf
+	karf@root>features:addurl mvn:org.apache.cxf.karaf/apache-cxf/2.6.2/xml/features
+	karf@root>features:install cxf
+	karf@root>install -s mvn:org.codehaus.jackson/jackson-core-asl/1.9.9
+	karf@root>install -s mvn:org.codehaus.jackson/jackson-mapper-asl/1.9.9
+	karf@root>install -s mvn:org.codehaus.jackson/jackson-jaxrs/1.9.9
 
 ## Prerequisites
 You need the following packages to be installed:
