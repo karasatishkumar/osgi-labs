@@ -35,6 +35,20 @@ After completing the prerequisites, you can follow the instructions to build the
 
 Once you have successfully installed the project, you need some apache karaf knowledge to install the bundles to OSGi container (Apache Karaf).
 
+May be for new users I'm just specifing the basic steps to install the bundles.
+
+Bundle installation works with maven configuration. You need to have "M2_HOME" in user user/system variable list. Karaf uses the "M2_HOME" attribute to locate the bundle in maven repository.
+
+Start the karaf
+
+	$KARAF_HOME/bin/karaf.sh
+
+Command for installing a bundle
+
+	install -s mvn:com.techiekernel.user/com.techiekernel/1.9.9
+
+In the above command the first atribute after mvn is the atrifact id, second is the group id and the third one is version.
+
 ## Contributing
 Pull requests are welcome.
 
